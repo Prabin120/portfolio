@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8d9df9fbf7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top nav-first py-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link mx-4" aria-current="page" href="#home">HOME</a>
+                        <a class="nav-link mx-4" href="#about">ABOUT</a>
+                        <a class="nav-link mx-4" href="#work">WORK</a>
+                        <a class="nav-link mx-4" href="#contact">CONTACT</a>
+                        <a class="nav-link mx-4" href="#">RESUME</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="home" class="d-flex justify-content-center align-items-center">
+        <div>
+            <h3 class="text-center intro">Hello, I am</h3>
+            <h2 class="text-center name">Prabin Sharma</h2>
+            <h4 class="text-center devel mt-4">I am a Software Developer</h4>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container pt-5">
+            <h1 class="title text-center my-5">ABOUT <span>ME</span></h1>
+            <div class="about d-flex align-items-center justify-content-center ">
+                <div class="container mt-5 p-5 bg-light">
+                    <div class="row w-100">
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center" scope="row"><button class="p-3" id="objective-button"
+                                                onclick="changeAbout('objective')">OBJECTIVE <i
+                                                    class="fa-solid fa-arrow-right fa-shake"></i></button></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row"><button class="p-3" id="personal-button"
+                                                onclick="changeAbout('personal')">PERSONAL</button></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row"><button class="p-3" id="education-button"
+                                                onclick="changeAbout('education')">EDUCATION</button></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="container about-detail p-3 m-3">
+                                <div id="objective">
+                                    <h5>
+                                        &emsp; &emsp; Objective Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Voluptate eius placeat recusandae cupiditate dolor doloremque, incidunt
+                                        explicabo, dolorem quia reiciendis repudiandae pariatur autem animi, nostrum
+                                        porro libero modi aliquid voluptatem tenetur nesciunt! Minus sed magni fuga,
+                                        veritatis atque voluptas recusandae?
+                                    </h5>
+                                </div>
+                                <div class="d-none" id="personal">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Name</th>
+                                                <td>:</td>
+                                                <td>Prabin Sharma</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">DOB</th>
+                                                <td>:</td>
+                                                <td>15 Jan 1999</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Nationality</th>
+                                                <td>:</td>
+                                                <td>India</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Address</th>
+                                                <td>:</td>
+                                                <td>Bangalore, Karnataka (560068)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-none" id="education">
+                                    <h4>MCA</h4>
+                                    <ul>
+                                        <li>from St. Anthony's College, Shillong, India</li>
+                                        <li>CGPA - 9.20</li>
+                                        <li>Period: 11/2020 - 07/2022</li>
+                                    </ul>
+                                    <h4>Bachelor's in Science</h4>
+                                    </ul>
+                                    <li>from Gauhati University, Guwahati, India</li>
+                                    <li>CGPA - 6.99</li>
+                                    <li>Period: 08/2017 - 11/2020</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="work">
+        <div class="container pt-5">
+            <h1 class="title text-center my-5">WORK <span>DETAIL</span></h1>
+            <p class="text-center text-light mid-text">Industrial Experience</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Developer</p>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut, aspernatur accusamus et sequi voluptatum quo dolores veritatis, iste ab odio nesciunt tempore. Nisi fugit accusantium eveniet! Amet, aut ab!</p>
+                        <p class="link mt-3"><a href="#">Github</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Developer2</p>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut, aspernatur accusamus et sequi voluptatum quo dolores veritatis, iste ab odio nesciunt tempore. Nisi fugit accusantium eveniet! Amet, aut ab!</p>
+                        <p class="link mt-3"><a href="#">Github</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Developer</p>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut, aspernatur accusamus et sequi voluptatum quo dolores veritatis, iste ab odio nesciunt tempore. Nisi fugit accusantium eveniet! Amet, aut ab!</p>
+                        <p class="link mt-3"><a href="#">Github</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Developer2</p>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut, aspernatur accusamus et sequi voluptatum quo dolores veritatis, iste ab odio nesciunt tempore. Nisi fugit accusantium eveniet! Amet, aut ab!</p>
+                        <p class="link mt-3"><a href="#">Github</a></p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-light mt-5 mid-text">Personal Projects</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Developer</p>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut, aspernatur accusamus et sequi voluptatum quo dolores veritatis, iste ab odio nesciunt tempore. Nisi fugit accusantium eveniet! Amet, aut ab!</p>
+                        <p class="link mt-3"><a href="#">Github</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <p class="period"><i class="fa-solid fa-calendar-days"></i> Dec 13,2022 - Present</p>
+                        <p class="role">Developer2</p>
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut, aspernatur accusamus et sequi voluptatum quo dolores veritatis, iste ab odio nesciunt tempore. Nisi fugit accusantium eveniet! Amet, aut ab!</p>
+                        <p class="link mt-3"><a href="#">Github</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <div class="container pt-5">
+            <h1 class="title text-center my-5">CONTACT <span>ME</span></h1>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        let targetOffset = $("#about").offset().top;
+
+        var $w = $(window).scroll(function () {
+            if ($w.scrollTop() > targetOffset) {
+                $("nav").addClass("bg-body-tertiary")
+                $("nav").removeClass("nav-first")
+            }
+            else {
+                $("nav").removeClass("bg-body-tertiary")
+                $("nav").addClass("nav-first")
+            }
+        })
+
+        function changeAbout(obj) {
+            let a = ['objective', 'personal', 'education'];
+            a.forEach(element => {
+                if (obj != element) {
+                    $("#" + element).addClass("d-none");
+                    $("#" + element + "-button").removeClass("about-selected p-2 m-2");
+                    $("#" + element + "-button").html(element.toUpperCase());
+                }
+            });
+            $("#" + obj).removeClass("d-none");
+            $("#" + obj + "-button").html(obj.toUpperCase() + " " + '<i class="fa-solid fa-arrow-right fa-shake"></i>');
+            $("#" + obj + "-button").addClass("about-selected p-2 m-2");
+        }
+    </script>
+</body>
+
+</html>
